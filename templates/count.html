@@ -1,0 +1,9 @@
+<h1>The text you entered has {{ count }} words</h1>
+<a onkeypress="blue" href= "{% url 'home' %}" >  Count New Word  </a>
+<h1> Text Entered: </h1>
+{{ fulltext }}
+<h1> Word count : </h1>
+{% for word, counttotal in wordcountdict %}
+{{ word }} - {{ counttotal}}
+<br />
+{% endfor %}
